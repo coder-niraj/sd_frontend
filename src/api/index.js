@@ -1,5 +1,5 @@
 
-let baseUrl = "http://localhost:3000"
+let baseUrl = "https://sd-backend-erqy.onrender.com"
 let userAuth = "/user"
 let LoginUrl = "/login"
 let RegisterUrl = "/register"
