@@ -1,20 +1,51 @@
 {
-  "name": "reactjs",
+  "name": "frontend",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://niraj.parekh.github.io/sd_frontend",
   "dependencies": {
+    "@react-oauth/google": "^0.12.1",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.7.2",
+    "emotion": "^11.0.0",
+    "es5-polyfill": "^0.0.6",
+    "file-saver": "^2.0.5",
+    "firebase": "^10.12.2",
+    "html-react-parser": "^5.1.10",
+    "lodash": "^4.17.21",
+    "moment": "^2.30.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-form-hook": "^0.0.1",
+    "react-hook-form": "^7.51.5",
+    "react-loader-spinner": "^6.1.6",
+    "react-loading-skeleton": "^3.4.0",
+    "react-modal": "^3.16.1",
+    "react-router-dom": "^6.23.1",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "react-scroll-to-bottom": "^4.2.0",
+    "react-social-login": "^3.4.17",
+    "react-social-login-buttons": "^4.1.0",
+    "react-spinners": "^0.13.8",
+    "react-toastify": "^10.0.5",
+    "reactjs-social-login": "^2.6.3",
+    "recoil": "^0.7.7",
+    "recoil-persist": "^5.1.0",
+    "smooth-scrollbar": "^8.8.4",
+    "smooth-scrollbar-react": "^2.4.1",
+    "socket.io-client": "^4.7.5",
+    "uuid": "^9.0.1",
+    "web-vitals": "^2.1.4",
+    "zustand": "^4.5.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "set PORT=3001 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -34,5 +65,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.6",
+    "@babel/plugin-proposal-optional-chaining": "^7.21.0",
+    "@babel/preset-env": "^7.24.6",
+    "tailwindcss": "^3.4.3"
   }
 }
