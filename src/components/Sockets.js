@@ -3,7 +3,9 @@ import io from 'socket.io-client';
 const socketStore = create((set, get) => ({
     socket: null,
     connect: () => {
-        const socket = io("http://localhost:3000");
+        const socket = io("https://sd-backend-erqy.onrender.com/", {
+            transports: ["websocket"], // optional but recommended
+        });
         console.log('socket val : ', socket)
         console.log("connected")
         set({ socket });
